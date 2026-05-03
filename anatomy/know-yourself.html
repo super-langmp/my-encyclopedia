@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>认识自己 | 人生笔记</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif;
+      -webkit-font-smoothing: antialiased;
+      overflow: hidden;
+    }
+
+    .fade-in {
+      animation: fadeIn 1s ease-out forwards;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    .body-part {
+      fill: transparent;
+      stroke: black;
+      stroke-width: 2.5;
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      cursor: pointer;
+    }
+
+    .group:hover .body-part {
+      fill: black;
+      stroke: black;
+      transform: scale(1.02);
+      transform-origin: center;
+    }
+  </style>
+</head>
+
+<body class="bg-[#fafafa] text-black h-screen selection:bg-black selection:text-white flex flex-col fade-in">
+
+  <header class="w-full z-50 absolute top-0">
+    <div class="max-w-7xl mx-auto px-8 h-20 flex items-center justify-between">
+      <a href="index.html"
+        class="text-sm font-medium text-gray-500 hover:text-black transition-colors flex items-center gap-2">
+        <span>←</span> 返回首页
+      </a>
+      <div class="text-sm font-bold tracking-widest uppercase">Anatomy of Self</div>
+    </div>
+  </header>
+
+  <main class="flex-1 flex items-center justify-center relative">
+    <svg viewBox="0 0 400 600" class="w-full max-w-lg h-[80vh] overflow-visible">
+
+      <a href="head.html" class="group">
+        <path d="M 150,150 A 50,50 0 0,1 250,150 Z" class="body-part" />
+        <text x="270" y="130"
+          class="text-sm font-bold tracking-widest uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-300 fill-black">Head
+          / 独立思考</text>
+        <line x1="220" y1="125" x2="260" y2="125"
+          class="stroke-black stroke-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+      </a>
+
+      <a href="face.html" class="group">
+        <path d="M 150,150 A 50,50 0 0,0 250,150 Z" class="body-part" />
+        <text x="70" y="170"
+          class="text-sm font-bold tracking-widest uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-300 fill-black text-right">Face
+          / 科学护肤</text>
+        <line x1="140" y1="165" x2="180" y2="165"
+          class="stroke-black stroke-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+      </a>
+
+      <rect x="190" y="200" width="20" height="20" class="fill-transparent stroke-black stroke-[2.5]" />
+
+      <a href="body.html" class="group">
+        <rect x="130" y="220" width="140" height="180" rx="30" class="body-part" />
+        <text x="290" y="310"
+          class="text-sm font-bold tracking-widest uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-300 fill-black">Body
+          / 核心重建</text>
+        <line x1="250" y1="305" x2="280" y2="305"
+          class="stroke-black stroke-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+      </a>
+
+      <a href="arms.html" class="group">
+        <rect x="80" y="230" width="30" height="100" rx="15" transform="rotate(15 95 230)" class="body-part" />
+        <rect x="290" y="230" width="30" height="100" rx="15" transform="rotate(-15 305 230)" class="body-part" />
+        <text x="35" y="280"
+          class="text-sm font-bold tracking-widest uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-300 fill-black text-right">Arms
+          / 力量与执行</text>
+        <line x1="110" y1="275" x2="140" y2="275"
+          class="stroke-black stroke-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+      </a>
+
+      <a href="hands.html" class="group">
+        <circle cx="70" cy="350" r="16" class="body-part" />
+        <circle cx="330" cy="350" r="16" class="body-part" />
+        <text x="350" y="355"
+          class="text-sm font-bold tracking-widest uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-300 fill-black">Hands
+          / 精度与创造</text>
+        <line x1="310" y1="350" x2="340" y2="350"
+          class="stroke-black stroke-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+      </a>
+
+      <a href="legs.html" class="group">
+        <rect x="145" y="415" width="35" height="110" rx="17.5" class="body-part" />
+        <rect x="220" y="415" width="35" height="110" rx="17.5" class="body-part" />
+        <text x="270" y="470"
+          class="text-sm font-bold tracking-widest uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-300 fill-black">Legs
+          / 发力与根基</text>
+        <line x1="240" y1="465" x2="260" y2="465"
+          class="stroke-black stroke-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+      </a>
+
+      <a href="feet.html" class="group">
+        <rect x="135" y="525" width="45" height="20" rx="10" class="body-part" />
+        <rect x="220" y="525" width="45" height="20" rx="10" class="body-part" />
+        <text x="50" y="540"
+          class="text-sm font-bold tracking-widest uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-300 fill-black text-right">Feet
+          / 踏实与行动</text>
+        <line x1="120" y1="535" x2="160" y2="535"
+          class="stroke-black stroke-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+      </a>
+
+    </svg>
+    <div
+      class="absolute bottom-10 left-1/2 -translate-x-1/2 text-xs font-bold text-gray-400 tracking-[0.2em] uppercase animate-pulse">
+      Hover & Click to Explore</div>
+  </main>
+</body>
+
+</html>

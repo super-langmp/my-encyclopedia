@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>优质书签库 | 人生笔记</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .fade-in {
+      animation: fadeIn 0.8s ease-out forwards;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+</head>
+
+<body class="bg-[#fcfcfc] text-black min-h-screen selection:bg-black selection:text-white">
+
+  <header class="fixed top-0 w-full bg-[#fcfcfc]/90 backdrop-blur-xl z-50 border-b border-gray-100">
+    <div class="max-w-4xl mx-auto px-8 h-20 flex items-center justify-between">
+      <a href="index.html"
+        class="text-sm font-medium text-gray-500 hover:text-black transition-colors flex items-center gap-2">
+        <span>←</span> Home
+      </a>
+      <div class="text-sm font-bold tracking-widest uppercase">Bookmarks</div>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-8 pt-40 pb-32 fade-in">
+    <h1 class="text-5xl font-bold tracking-tighter mb-16">优质书签库</h1>
+
+    <div class="mb-12">
+      <h2 class="text-lg font-bold text-gray-400 uppercase tracking-widest mb-6 border-b border-gray-200 pb-2">生产力与工具
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <a href="#"
+          class="group p-6 bg-white border border-gray-200 hover:border-black transition-colors flex justify-between items-center">
+          <div>
+            <h3 class="text-xl font-bold text-black mb-1">Cursor / VS Code</h3>
+            <p class="text-sm text-gray-500">我的代码与创造力核心工具。</p>
+          </div>
+          <span class="text-gray-300 group-hover:text-black transition-colors text-2xl">↗</span>
+        </a>
+        <a href="#"
+          class="group p-6 bg-white border border-gray-200 hover:border-black transition-colors flex justify-between items-center">
+          <div>
+            <h3 class="text-xl font-bold text-black mb-1">Figma</h3>
+            <p class="text-sm text-gray-500">UI/UX 设计，极简美学的绘图板。</p>
+          </div>
+          <span class="text-gray-300 group-hover:text-black transition-colors text-2xl">↗</span>
+        </a>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

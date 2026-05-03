@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>正确护肤指南 | 人生笔记</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .fade-in {
+      animation: fadeIn 0.8s ease-out forwards;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+</head>
+
+<body class="bg-white text-black min-h-screen selection:bg-black selection:text-white">
+
+  <header class="fixed top-0 w-full bg-white/90 backdrop-blur-xl z-50">
+    <div class="max-w-3xl mx-auto px-8 h-20 flex items-center">
+      <a href="index.html"
+        class="text-sm font-medium text-gray-500 hover:text-black transition-colors flex items-center gap-2">
+        <span>←</span> 返回首页
+      </a>
+    </div>
+  </header>
+
+  <main class="max-w-3xl mx-auto px-8 pt-40 pb-32 fade-in">
+    <div class="mb-16">
+      <div class="text-xs font-bold tracking-widest uppercase text-gray-400 mb-6">Science</div>
+      <h1 class="text-4xl md:text-5xl font-bold tracking-tight leading-snug mb-8">正确护肤指南：摒弃智商税</h1>
+      <div class="h-px w-full bg-gray-100"></div>
+    </div>
+
+    <article class="prose prose-lg prose-slate max-w-none text-gray-700 leading-relaxed">
+      <p class="mb-6">在消费主义盛行的今天，护肤往往被包装成一种昂贵的玄学。但从皮肤科学的角度来看，高级的护肤往往只需要最精简的步骤。</p>
+
+      <h2 class="text-2xl font-bold text-black mt-10 mb-4">护肤的核心金字塔</h2>
+      <ul class="list-none pl-0 space-y-6">
+        <li class="p-6 bg-gray-50 border border-gray-100">
+          <strong class="block text-xl text-black mb-2">1. 适度清洁 (Cleanse)</strong>
+          千万不要追求“洗得搓盘子一样干净”。破坏皮脂膜是所有敏感肌的万恶之源。选择温和的氨基酸洁面，一天最多两次。
+        </li>
+        <li class="p-6 bg-gray-50 border border-gray-100">
+          <strong class="block text-xl text-black mb-2">2. 基础保湿 (Moisturize)</strong>
+          不需要拍五六层水乳精华。一瓶成分干净的保湿霜（如含有神经酰胺、角鲨烷）就足以锁住水分，维持屏障健康。
+        </li>
+        <li class="p-6 bg-gray-50 border border-gray-100">
+          <strong class="block text-xl text-black mb-2">3. 严格防晒 (Protect)</strong>
+          防晒不是为了防黑，而是为了防老（光老化）。能打伞戴帽子就不涂防晒霜，必须涂抹时，认准物理防晒或温和的化学防晒。
+        </li>
+      </ul>
+    </article>
+  </main>
+</body>
+
+</html>

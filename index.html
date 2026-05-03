@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>人生笔记 | 个人百科</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* 极致的苹果风字体排版，强调无衬线和清晰度 */
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    /* 高级感的来源：丝滑的贝塞尔曲线入场动画 */
+    .fade-in-up {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    .delay-100 {
+      animation-delay: 100ms;
+    }
+
+    .delay-200 {
+      animation-delay: 200ms;
+    }
+
+    .delay-300 {
+      animation-delay: 300ms;
+    }
+
+    .delay-400 {
+      animation-delay: 400ms;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* 隐藏滚动条但保留滚动功能，保持页面极度干净 */
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+</head>
+
+<body class="bg-white text-black min-h-screen selection:bg-black selection:text-white">
+
+  <header class="fixed top-0 w-full bg-white/90 backdrop-blur-xl z-50 border-b border-gray-50">
+    <div class="max-w-7xl mx-auto px-8 h-20 flex items-center justify-between">
+      <div class="text-sm font-bold tracking-widest uppercase">My Encyclopedia.</div>
+      <nav class="flex gap-8 text-sm font-medium">
+        <a href="about.html" class="text-gray-400 hover:text-black transition-colors">关于我</a>
+        <a href="submit.html" class="text-gray-400 hover:text-black transition-colors">留言/投稿</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-8 pt-40 pb-24">
+
+    <section class="mb-32 fade-in-up">
+      <h1 class="text-6xl md:text-8xl font-bold tracking-tighter leading-tight mb-8">
+        人生经验，<br>
+        与<span class="text-gray-400">我认为正确的事。</span>
+      </h1>
+      <p class="text-xl text-gray-500 max-w-2xl font-medium leading-relaxed">
+        这里是我的数字大脑与人生笔记。收录关于爱、勇气、科学以及一切值得记录的知识碎片。
+      </p>
+    </section>
+
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-32">
+
+      <a href="anatomy/know-yourself.html"
+        class="md:col-span-3 group block p-12 border border-black bg-white text-black hover:bg-black hover:text-white transition-all duration-700 fade-in-up delay-100">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center h-full">
+          <div>
+            <div class="text-xs font-bold tracking-widest uppercase text-gray-400 mb-4 group-hover:text-gray-300">
+              Anatomy of Self</div>
+            <h2
+              class="text-4xl md:text-5xl font-bold tracking-tight mb-4 group-hover:translate-x-2 transition-transform duration-500">
+              认识自己：人体隐喻地图</h2>
+            <p class="text-gray-500 font-medium group-hover:text-gray-400">点击探索人体的不同部位：从独立思想到科学护肤，再到身体的物理重建。</p>
+          </div>
+          <div
+            class="hidden md:block text-6xl font-light opacity-50 group-hover:opacity-100 group-hover:translate-x-4 transition-all duration-500">
+            →</div>
+        </div>
+      </a>
+
+      <a href="categories/philosophy.html"
+        class="md:col-span-2 group block p-10 border border-black/10 hover:border-black bg-gray-50/50 hover:bg-white transition-all duration-500 fade-in-up delay-200">
+        <div class="flex flex-col h-full justify-between min-h-[240px]">
+          <div class="text-xs font-bold tracking-widest uppercase text-gray-400 mb-4">Philosophy</div>
+          <div>
+            <h2
+              class="text-3xl font-bold tracking-tight mb-4 group-hover:translate-x-2 transition-transform duration-500">
+              什么是爱与勇气？</h2>
+            <p class="text-gray-500 font-medium">探讨人际关系的本质，以及面对未知时的内心力量。</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="categories/skincare.html"
+        class="group block p-10 border border-black/10 hover:border-black bg-gray-50/50 hover:bg-white transition-all duration-500 fade-in-up delay-300">
+        <div class="flex flex-col h-full justify-between min-h-[240px]">
+          <div class="text-xs font-bold tracking-widest uppercase text-gray-400 mb-4">Science</div>
+          <div>
+            <h2
+              class="text-3xl font-bold tracking-tight mb-4 group-hover:translate-x-2 transition-transform duration-500">
+              正确护肤指南</h2>
+            <p class="text-gray-500 font-medium">摒弃智商税，从成分和皮肤科学出发。</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="categories/bookmarks.html"
+        class="group block p-10 border border-black/10 hover:border-black bg-gray-50/50 hover:bg-white transition-all duration-500 fade-in-up delay-400">
+        <div class="flex flex-col h-full justify-between min-h-[240px]">
+          <div class="text-xs font-bold tracking-widest uppercase text-gray-400 mb-4">Bookmarks</div>
+          <div>
+            <h2
+              class="text-3xl font-bold tracking-tight mb-4 group-hover:translate-x-2 transition-transform duration-500">
+              优质书签库</h2>
+            <p class="text-gray-500 font-medium">我常用的工具、网站和数字资源。</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="categories/quotes.html"
+        class="md:col-span-2 group block p-10 border border-black/10 hover:border-black bg-black text-white hover:bg-black/90 transition-all duration-500 fade-in-up delay-400">
+        <div class="flex flex-col h-full justify-between min-h-[240px]">
+          <div class="text-xs font-bold tracking-widest uppercase text-gray-400 mb-4">Quotes</div>
+          <div>
+            <h2 class="text-3xl font-bold tracking-tight mb-4">喜欢的话与金句摘录</h2>
+            <p class="text-gray-400 font-medium">"勇气不是没有恐惧，而是明白有比恐惧更重要的东西。"</p>
+          </div>
+        </div>
+      </a>
+
+    </section>
+
+  </main>
+
+</body>
+
+</html>
